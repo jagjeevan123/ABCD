@@ -1,0 +1,39 @@
+9. Write a Java Program of Multilevel Inheritance
+
+class A
+{
+int no1;
+String name;
+void get()
+{
+no1 = 100;
+name = “Manish”;
+}
+}
+class B extends A
+{
+int no2;
+void put()
+{
+no2 = 500;
+}
+}
+class C extends B
+{
+void display()
+{
+System.out.println (no1);
+System.out.println (no2);
+System.out.println (name);
+}
+}
+class Demo
+{
+ public static void main (String M[])
+{
+C obj = new C();
+obj.get();
+obj.put();
+obj.display();
+}
+}

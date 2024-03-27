@@ -1,0 +1,30 @@
+13. Write a Java Program of Abstract class.
+
+abstract class Shape
+{ 
+ abstract void show(); 
+} 
+class Rectangle extends Shape
+{ 
+ void show()
+ {
+ System.out.println ("I am rectangle");
+ } 
+} 
+class Circle extends Shape
+ { 
+ void show()
+ {
+ System.out.println ("I am circle");
+ } 
+} 
+class Test
+{ 
+public static void main (String M[])
+ { 
+ Shape s=new Circle(); //Reference
+ s.show(); 
+Shape s1=new Rectangle(); //Reference
+ s1.show();
+ } 
+} 

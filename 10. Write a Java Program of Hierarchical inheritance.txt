@@ -1,0 +1,41 @@
+10. Write a Java Program of Hierarchical Inheritance.
+
+class A
+{
+int no1,no2;
+void get()
+{
+no1 = 200;
+no2 = 200;
+}
+}
+class B extends A
+{
+int sum;
+void add()
+{
+sum = no1 + no2;
+System.out.println (sum);
+}
+}
+class C extends A
+{
+int res;
+void mul()
+{
+res = no1 * no2;
+System.out.println (res);
+}
+}
+class Demo
+{
+ public static void main (String M[])
+{
+B obj1 = new B();
+C obj2 = new C();
+obj1.get();
+obj1.add();
+obj2.get();
+obj2.mul();
+}
+}

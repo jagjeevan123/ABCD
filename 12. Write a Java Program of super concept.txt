@@ -1,0 +1,41 @@
+12. Write a Java Program of super concept.
+
+class Parent 
+{ 
+String color="White"; 
+ Parent() 
+ { 
+ System.out.println ("Parent Class constructor."); 
+ } 
+ void display()
+ {
+ System.out.println ("I am display() from Parent class");
+ } 
+} 
+class Child extends Parent 
+{ 
+ String color="Black"; 
+ Child() 
+ { 
+super();
+ System.out.println ("Child Class constructor calling."); 
+ } 
+ 
+void display()
+ {
+super.display();
+System.out.println ("I am display() from Child class ");
+System.out.println (color);
+System.out.println (super.color); 
+super.color=”pink”;
+System.out.println (super.color); 
+}
+ } 
+class order 
+{ 
+ public static void main (String M[]) 
+ { 
+ Child C=new Child(); 
+ C.display();
+ } 
+}

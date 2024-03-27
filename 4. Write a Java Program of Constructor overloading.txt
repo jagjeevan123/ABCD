@@ -1,0 +1,34 @@
+4. Write a Java Program of Constructor Overloading.
+
+class Student
+{ 
+ int id, age; 
+ String name; 
+ Student()
+{
+System.out.println (“I am default Constructor”);
+}
+ Student (int i, String n)
+{ 
+ id = i; 
+ name = n; 
+}
+ Student (int x, String y, int z)
+{ 
+ id = x; 
+ name = y;
+ age = z; 
+} 
+ void display()
+ {
+ System.out.println (id+" "+name+" "+age);
+ } 
+ public static void main (String M[]) 
+ {
+ Student s = new Student();
+Student s1 = new Student (101, "Manesh"); 
+ Student s2 = new Student (202, "Ashvin", 25); 
+ s1.display (); 
+ s2.display (); 
+ } 
+ }

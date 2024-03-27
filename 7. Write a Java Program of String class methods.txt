@@ -1,0 +1,35 @@
+7. Write a Java Program of String class methods.
+
+class Test {
+ public static void main(String M[]) {
+ 
+String s = "I am in BCA";
+ s = s.concat (" Shayona Campus");
+ System.out.println(s);
+ 
+String Str = new String ("This is really not immutable");
+ boolean retVal;
+ retVal = Str.endsWith ( "immutable" );
+ System.out.println ("Returned Value = " + retVal);
+ retVal = Str.endsWith( "immu" );
+ System.out.println ("Returned Value = " + retVal);
+String Str2 = new String ("Welcome to Shayona BCA College");
+ System.out.print ("Found Index:");
+ System.out.println (Str2.indexOf ( 'o'));
+String Str3 = new String (“Patel Manesh kumar");
+ String Str4 = new String ("Manesh is a Teacher");
+ System.out.print ("String Length :");
+ System.out.println (Str3.length());
+ System.out.print ("String Length :");
+ System.out.println(Str4.length());
+String Str5 = new String ("Welcome to MissionClasses.com");
+ System.out.print ("Return Value:");
+ System.out.println (Str5.replace ('o', 'M'));
+ String s6 = "Patel Manesh kumar";
+char result = s6.charAt(8);
+ System.out.println (result);
+System.out.println (s6.startsWith ("Patel"));
+System.out.println (s6.toLowerCase ());
+System.out.println (s6.toUpperCase ());
+ } 
+}

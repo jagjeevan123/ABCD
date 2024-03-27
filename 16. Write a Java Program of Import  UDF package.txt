@@ -1,0 +1,22 @@
+16. Write a Java Program of Import UDF Package.
+
+package sem1; 
+public class A
+{ 
+ public void msg()
+ {
+ System.out.println ("Hello");
+ } 
+} 
+//save by A.java 
+package sem2; 
+import sem1.*; 
+class B
+{ 
+public static void main (String M[])
+ { 
+A obj = new A(); 
+obj.msg(); 
+ } 
+}
+//save by B.java

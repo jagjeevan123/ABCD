@@ -1,0 +1,27 @@
+14. Write a Java Program of Multiple Inheritance by Interface. 
+
+interface ABC // interface
+{ 
+ void print(); 
+} 
+class XYZ // class
+{ 
+ void show()
+{
+System.out.println ("I am from class");
+} 
+} 
+class Manish extends XYZ implements ABC
+{ 
+public void print() 
+{ 
+System.out.println ("I am from Interface");
+} 
+ 
+public static void main(String args[])
+{ 
+Manish obj = new Manish(); 
+obj.print(); // method of interface
+obj.show(); // method of class
+ } 
+}

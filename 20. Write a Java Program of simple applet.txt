@@ -1,0 +1,15 @@
+20. Write a Java Program of simple Applet.
+
+import java.applet.Applet;
+import java.awt.Graphics;
+/* 
+<applet code = "Demo" width = 200 height = 200>
+</applet>
+*/
+public class Demo extends Applet
+{
+public void paint (Graphics g)
+{
+g.drawString ("This is my First Applet", 20, 100);
+}
+}
